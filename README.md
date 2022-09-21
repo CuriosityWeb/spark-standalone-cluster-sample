@@ -17,6 +17,11 @@ Inside the docker file, the spark version **[spark-3.3.0-bin-hadoop3-scala2.13](
 
 ## How to run?
 
+ - Running single spark shell
+ - Running Standalone Cluster With 1 Master Node & 3 Worker Node
+ - Running Scala Samples
+ - Running Python Samples
+
 ### Running single spark shell
 
     cd spark-setup
@@ -44,7 +49,7 @@ Navigate to **localhost:8080** in the host machine's browser.
 
 The above screenshot shows that the spark cluster is operational, with one master node and three worker nodes, and the master url is **spark://localhost:7077**.
 
-### Running Scala Examples
+### Running Scala Samples
 
 **Note:** Please start the cluster as described in **Running Standalone Cluster With 1 Master Node & 3 Worker Node** before running the scala samples.
 
@@ -65,7 +70,7 @@ To run the Scala sample, the host machine must be configured as follows:
 ![sample-image-4](images/A4.jpg)
 
 
-### Running Python Examples
+### Running Python Samples
 
 **Note:** Please start the cluster as described in **Running Standalone Cluster With 1 Master Node & 3 Worker Node** before running the python samples.
 
