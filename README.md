@@ -63,3 +63,16 @@ To run the Scala sample, the host machine must be configured as follows:
 #### Output
 
 ![sample-image-4](images/A4.jpg)
+
+
+### Running Python Examples
+
+**Note:** Please start the cluster as described in **Running Standalone Cluster With 1 Master Node & 3 Worker Node** before running the scala samples.
+
+To run the Scala sample, the host machine must be configured as follows:
+
+|  | Version |
+|--|--|
+| **Python** | 3.10.7 |
+
+
