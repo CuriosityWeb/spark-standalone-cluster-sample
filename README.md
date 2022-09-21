@@ -32,7 +32,7 @@ Inside the docker file, the spark version **[spark-3.3.0-bin-hadoop3-scala2.13](
 
     cd spark-setup
     docker build -t spark-shell .
-    docker run -it -p 8080:8080 spark-shell
+    docker run -it -p 4040:4040 spark-shell
    
 ![sample-image-1](images/A1.jpg)
 ![sample-image-2](images/A2.jpg)
