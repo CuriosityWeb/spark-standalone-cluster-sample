@@ -28,9 +28,7 @@ The following versions are used in the docker file:
 
 Inside the docker file, the spark version **[spark-3.3.0-bin-hadoop3-scala2.13](https://www.apache.org/dyn/closer.lua/spark/spark-3.3.0/spark-3.3.0-bin-hadoop3-scala2.13.tgz)** is used.
 
-## How to run?
-
- - Running single spark shell
+## Running single spark shell
 
        cd spark-setup
        docker build -t spark-shell .
