@@ -1,4 +1,4 @@
-# Spark Standalone Cluster Sample
+# Spark Standalone Cluster Inside Docker Container
 
 This repository includes a **POC** for creating a local spark cluster using docker containers, as well as examples in **Scala** and **Python** for connecting to a spark cluster and executing tasks.
 
