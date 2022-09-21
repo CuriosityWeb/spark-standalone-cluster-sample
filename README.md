@@ -42,7 +42,7 @@ The above screenshot shows that the spark cluster is operational, with one maste
 
 ## Running Scala Examples
 
-**Note:** Please start the cluster as described in step 1 before running the scala samples.
+**Note:** Please start the cluster as described in **Running Standalone Cluster With 1 Master Node & 3 Worker Node** before running the scala samples.
 
 To run the Scala sample, the host machine must be configured as follows:
 
