@@ -67,12 +67,22 @@ To run the Scala sample, the host machine must be configured as follows:
 
 ### Running Python Examples
 
-**Note:** Please start the cluster as described in **Running Standalone Cluster With 1 Master Node & 3 Worker Node** before running the scala samples.
+**Note:** Please start the cluster as described in **Running Standalone Cluster With 1 Master Node & 3 Worker Node** before running the python samples.
 
-To run the Scala sample, the host machine must be configured as follows:
+To run the Python sample, the host machine must be configured as follows:
 
 |  | Version |
 |--|--|
 | **Python** | 3.10.7 |
 
+**Note:** The commands below are for Windows; for other operating systems, try finding the equivalent commands.
 
+    cd python-examples
+    virtualenv venv
+    .\venv\Scripts\activate
+    pip install -r requirements.txt
+    python .\CuriosityWeb\first_run.py
+
+#### Output
+
+![sample-image-5](images/A5.jpg)
