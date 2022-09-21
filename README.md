@@ -38,4 +38,4 @@ Navigate to **localhost:8080** in the host machine's browser.
 
 ![sample-image-3](images/A3.jpg)
 
-The above screenshot shows that the spark cluster is operational, with one master node and three worker nodes, and the master url is **spark:/localhost:7077**.
+The above screenshot shows that the spark cluster is operational, with one master node and three worker nodes, and the master url is **spark://localhost:7077**.
