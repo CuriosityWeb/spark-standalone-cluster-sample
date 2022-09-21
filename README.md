@@ -39,3 +39,21 @@ Navigate to **localhost:8080** in the host machine's browser.
 ![sample-image-3](images/A3.jpg)
 
 The above screenshot shows that the spark cluster is operational, with one master node and three worker nodes, and the master url is **spark://localhost:7077**.
+
+## Running Scala Examples
+
+To run the Scala sample, the host machine must be configured as follows:
+
+|  | Version |
+|--|--|
+| **JVM** | 11 |
+| **SBT** | 1.7.1 |
+
+**Note:** Scala version 2.13.8 is used in this project.
+
+    cd scala-examples
+    sbt clean compile "runMain CuriosityWeb.FirstRun"
+
+**Output**
+
+![sample-image-4](images/A4.jpg)
