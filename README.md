@@ -17,12 +17,12 @@ Inside the docker file, the spark version **[spark-3.3.0-bin-hadoop3-scala2.13](
 
 ## How to run?
 
- - Running single spark shell
+ - Running Single Spark Shell
  - Running Standalone Cluster With 1 Master Node & 3 Worker Node
  - Running Scala Samples
  - Running Python Samples
 
-### Running single spark shell
+### Running Single Spark Shell
 
     cd spark-setup
     docker build -t spark-shell .
