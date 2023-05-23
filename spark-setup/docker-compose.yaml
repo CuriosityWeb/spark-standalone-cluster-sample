@@ -1,0 +1,59 @@
+version: "3.9"
+
+services:
+  spark-master:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: "spark-master"
+    entrypoint: /opt/spark-3.3.0-bin-hadoop3-scala2.13/sbin/start-master.sh
+    ports:
+      - "8080:8080"
+      - "7077:7077"
+    expose:
+      - "7077"
+    environment:
+      SPARK_NO_DAEMONIZE: true
+  worker_a:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: "worker_a"
+    entrypoint: /opt/spark-3.3.0-bin-hadoop3-scala2.13/sbin/start-worker.sh
+    ports:
+      - "8081:8081"
+      - "56909:56909"
+    command:
+      - "spark://spark-master:7077"
+    environment:
+      SPARK_NO_DAEMONIZE: true
+    depends_on:
+      - spark-master
+  worker_b:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: "worker_b"
+    entrypoint: /opt/spark-3.3.0-bin-hadoop3-scala2.13/sbin/start-worker.sh
+    ports:
+      - "8082:8081"
+    command:
+      - "spark://spark-master:7077"
+    environment:
+      SPARK_NO_DAEMONIZE: true
+    depends_on:
+      - spark-master
+  worker_c:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: "worker_c"
+    entrypoint: /opt/spark-3.3.0-bin-hadoop3-scala2.13/sbin/start-worker.sh
+    ports:
+      - "8083:8081"
+    command:
+      - "spark://spark-master:7077"
+    environment:
+      SPARK_NO_DAEMONIZE: true
+    depends_on:
+      - spark-master

@@ -1,0 +1,16 @@
+.idea
+
+scala-examples/.bsp
+scala-examples/.idea
+scala-examples/null
+scala-examples/target
+scala-examples/project/project/target
+scala-examples/project/target
+scala-examples/scala-examples.iml
+
+python-examples/.idea
+python-examples/python-examples.iml
+python-examples/venv
+
+*.class
+*.log
